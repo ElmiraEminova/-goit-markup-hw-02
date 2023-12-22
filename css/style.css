@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #434455;
   background-color: #fff;
 }
 a {
@@ -9,22 +10,9 @@ li {
   list-style: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .logo {
-  color: #2e2f42;
-  font-family: Raleway;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -32,8 +20,8 @@ li {
   text-transform: uppercase;
 }
 
-.web-word {
-  color: #4d5ae5;
+.word {
+  color: #2e2f42;
 }
 
 .menu-navigation-link {
@@ -46,14 +34,13 @@ li {
 .menu-navigation .menu-navigation-link:hover {
   color: #404bbf;
 }
-.menu-navigation .studio-link:active {
+.menu-navigation .menu-navigation-link:focus {
   color: #404bbf;
 }
 
 .contacts-link {
   color: #434455;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -62,10 +49,18 @@ li {
   color: #404bbf;
 }
 
+.contacts-list .contacts-link:focus {
+  color: #404bbf;
+}
+
+.contacts-menu {
+  font-style: normal;
+}
+
 .hero {
   background-color: #2e2f42;
 }
-h1 {
+.main-title {
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -74,7 +69,7 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-.button-1 {
+.btn-main {
   background-color: #4d5ae5;
   color: #fff;
   font-size: 16px;
@@ -83,7 +78,8 @@ h1 {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.button-1:hover {
+.btn-main:hover,
+.btn-main:focus {
   background-color: #404bbf;
 }
 
@@ -116,12 +112,18 @@ h1 {
   background-color: #f4f4fd;
 }
 
+.team-item {
+  background-color: #fff;
+}
+
 .footer-menu {
   background-color: #2e2f42;
 }
 
 .footer-info {
   color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .studio-word {
